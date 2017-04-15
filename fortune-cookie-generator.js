@@ -80,7 +80,7 @@ var fortuneCookieText = document.getElementById('fortune-cookie-text');
         // Select the `#previous-fortunes-container` container and use
         // `appendChild()` to append the new `li` element you created above.
         // You should see the previous fortune cookie saying show up in the list.
- var previousFortunesContainer = document.getElementByID("previous-fortunes-container")
+ var previousFortunesContainer = document.getElementByID("previous-fortunes-container");
  previousFortunesContainer.appendChild(newFortuneLiElement);
         
 
