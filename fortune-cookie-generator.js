@@ -75,10 +75,11 @@ var generateFortuneCookie = function() {
  var newFortuneLiElement = document.createElement(li)
         // 2. Set the `innerHTML` of that element equal to the `innerHTML` of
         //    the `#fortune-cookie-text` element.
- newFortuneLiElement.innerHTML = fortune.innerHTML;
+ newFortuneLiElement.innerHTML = fortuneCookieText.innerHTML;
         // 3. Select the `#previous-fortunes-container` container and use
         //    `appendChild()` to append the new `li` element you created above.
-  document.getElementByID("previous-fortunes-containter").appendChild(newFortuneLiElement);
+ var previousFortunesContainer = document.getElementByID("previous-fortunes-containter")
+ previousFortunesContainer.appendChild(newFortuneLiElement);
         // 4. You should see the previous fortune cookie saying show up in the list.
   
 
@@ -86,9 +87,8 @@ var generateFortuneCookie = function() {
     // `fortunesList` variable. (HINT: You will use `Math.floor()` and
     // `Math.random()` to accomplish this.) Use this data to update the
     // `innerText` of the `#fortune-cookie-text` element.
-var randomFortune = fortunesList[Math.floor(Math.random()*fortunesList.length)];
-var myNewUl = document.getElementById('fortune-cookie-text');
-myNewUl.textContent = randomFortune;  
+var randomFortune = fortunesList[(Math.floor(Math.random()*fortunesList.length))];
+fortuneCookieText.innerHTML = randomFortune;
  
 }
 
