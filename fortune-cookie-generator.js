@@ -77,12 +77,6 @@ var fortuneCookieText = document.getElementById('fortune-cookie-text');
         // Set the `innerHTML` of that element equal to the `innerHTML` of the `#fortune-cookie-text` element.
  newFortuneLiElement.innerHTML = fortuneCookieText.innerHTML;
 
-        // Select the `#previous-fortunes-container` container and use
-        // `appendChild()` to append the new `li` element you created above.
-        // You should see the previous fortune cookie saying show up in the list.
- var previousFortunesContainer = document.getElementByID("previous-fortunes-container");
- previousFortunesContainer.appendChild(newFortuneLiElement);
-        
 
     // Using Math.floor() and Math.random() select a new 
     // (random) fortune cookie saying from the data stored in the
