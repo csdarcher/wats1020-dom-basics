@@ -72,7 +72,7 @@ var fortuneCookieText = document.getElementById('fortune-cookie-text');
     // value of `#fortune-cookie-text`. Follow these steps:
 
         // Create a new `li` element with the `document.createElement()` method.
- var newFortuneLiElement = document.createElement(li);
+ var newFortuneLiElement = document.createElement("li");
         
         // Set the `innerHTML` of that element equal to the `innerHTML` of the `#fortune-cookie-text` element.
  newFortuneLiElement.innerHTML = fortuneCookieText.innerHTML;
